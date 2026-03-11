@@ -8,6 +8,7 @@ file_type = str(file.buffer.read(6))[2:8]
 file_end = 468878
 chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()1234567890_-+={[]}\\|;:\'\",<.>/?`~".replace("", " ").split(" ")
 message = input("What is the message you would like to encode \n>>> ")
+
 shift = random.randint(1, 7)
 encoded_string = [int(str(shift), 2)]
 file_data = file.buffer.read(file_end)
