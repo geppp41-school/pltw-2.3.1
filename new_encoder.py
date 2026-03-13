@@ -33,10 +33,10 @@ def custom_binary_shift_left(binary, shift_amount = 1):
 
 for i in range(len(message)):   
      encoded_string.append(int(str(custom_binary_shift_left(int_to_binary_string(str.encode(message[i])[0]), shift)), 2))
-print(encoded_string)
+
 encoded_string.append(int(int_to_binary_string(shift), 2))
 
-print(bytes(encoded_string))
+
 file_data += bytes(encoded_string) #type: ignore
 
 with open("encoded.gif", "w") as File:
